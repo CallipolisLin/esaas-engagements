@@ -22,7 +22,7 @@ Background: Logged in
         | user 2 |                 | test@user.com |
         | user 3 |                 | test@user.com |
 
-    And I'm logged in 
+    And I'm logged in on the orgs page 
 
 Scenario: search for an app by name keyword
     Given I uncheck "Organization"
@@ -119,4 +119,3 @@ Scenario: search for all three categories by keyword
     Then I should see "user 2"
     And I should see "app 2"
 
-s
