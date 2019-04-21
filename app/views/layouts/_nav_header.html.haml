@@ -15,5 +15,5 @@
           = submit_tag "Search", :class => "btn btn-primary"
           - ["App", "Organization", "User"].each do |category|
             = check_box_tag "search_filters[]", category, true, :class => 'filter'
-            = category
+            = label_tag category, category
         

@@ -30,3 +30,5 @@ Given(/^I'm logged in on the orgs page$/) do
   click_link "Log in with GitHub"
   visit "/orgs"
 end
+
+

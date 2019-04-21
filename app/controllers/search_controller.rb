@@ -19,7 +19,7 @@ class SearchController < ApplicationController
     keyword = ("%" + params["keyword"] + "%").downcase
     filters = params[:search_filters]
     if filters.include?("App")
-      @apps = App.where('lower(name) LIKE ?', keyword).all() + App.where('lower(description) LIKE ?', keyword).all()
+      @apps = App.where('lower(name) LIKE ?', keyword).all() | App.where('lower(description) LIKE ?', keyword).all()
     else
       @apps = []
     end
